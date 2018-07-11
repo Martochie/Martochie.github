@@ -33,7 +33,11 @@ img {
 
 /* header block */
 .header {
+    position: fixed;
+    background: #0552aa;
+    width: 100%;
     border-bottom: 2px solid #acacac;
+    z-index: 10;
 }
 
 .wrapper {
@@ -67,10 +71,6 @@ img {
     margin-right: 15px;
 }
 
-/*.logo .info p:last-child {*/
-    /*margin-right: 0;*/
-/*!*}*! Последний элемент <p>*/
-
 .logo .info span {
     font-weight: normal;
 }
@@ -90,6 +90,10 @@ img {
 }
 
 /*main block*/
+.main {
+    padding-top: 214px;
+}
+
 .main .photo {
     width: 300px;
     height: 300px;
@@ -112,4 +116,78 @@ img {
 .footer {
     border-top: 2px solid #acacac;
     text-align: center;
+}
+
+/*cubelist - списки кубов*/
+.cubefirst {
+    width: 800px;
+    height: 800px;
+    background: #333333;
+    margin: 0 auto;
+    position: relative;
+}
+
+.redcube {
+    width: 450px;
+    height: 450px;
+    background: red;
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.bluecube {
+    width: 450px;
+    height: 450px;
+    background: blue;
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+}
+
+.greencube {
+    width: 450px;
+    height: 450px;
+    background: green;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.yellowcube {
+    width: 450px;
+    height: 450px;
+    background: yellow;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.redcube:hover {
+    z-index: 4;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.bluecube:hover {
+    z-index: 3;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.greencube:hover {
+    z-index: 2;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.yellowcube:hover {
+    z-index: 1;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    background: #777777;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
 }
