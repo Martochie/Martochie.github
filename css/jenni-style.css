@@ -784,6 +784,10 @@ button.slick-prev {
     transition: all .2s;
 }
 
+.burger-menu {
+    display: none;
+}
+
 /*media*/
 
 .nav-menu ul.is-active {
@@ -795,6 +799,10 @@ button.slick-prev {
         display: none;
     }
 
+    .burger-menu {
+        display: block;
+    }
+
     .tablets-block {
         flex-wrap: wrap;
         justify-content: center;
@@ -802,10 +810,6 @@ button.slick-prev {
 
     .tablets-block > div {
         margin: 6px;
-    }
-
-    .content-main {
-        width: 100%;
     }
 
 }
