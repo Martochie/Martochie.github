@@ -803,5 +803,9 @@ button.slick-prev {
     .tablets-block > div {
         margin: 6px;
     }
-    
+
+    .content-main {
+        width: 100%;
+    }
+
 }
